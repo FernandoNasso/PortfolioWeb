@@ -1,0 +1,72 @@
+.headerContainer {
+  background: rgba(0, 0, 0, 0.93);
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide el espacio en dos columnas */
+  align-items: center;
+  color: #fff;
+}
+
+.leftColumn {
+  display: flex; /* Activa el modelo de caja flexible */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 1px;
+}
+
+
+.headerImage {
+  border-radius: 10%;
+  max-width: 120px;
+  padding: 10px; /* Añade relleno para que la caja se vea bien */
+
+}
+
+.textContainer1 h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  background-color: rgba(80, 195, 220, 0.3); /* Cambia el último valor para controlar la transparencia */
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.rightColumn {
+  text-align: center;
+  padding: 10px; /* Añade relleno para que la caja se vea bien */
+
+}
+
+.textContainer2 h2 {
+  font-size: 35px;
+  margin: 0;
+  background-color: rgba(255, 46, 120, 0.384);
+  color: #ffffff; /* Cambia el color del texto a blanco o a tu elección */
+  padding: 10px; /* Añade relleno para que la caja se vea bien */
+  border-radius: 10px; /* Agrega esquinas redondeadas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Agrega una sombra suave */
+  display: inline-block; /* Hace que la caja se ajuste al texto */
+}
+
+.iconsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+.reactIcon {
+  font-size: 32px;
+  margin: 5px;
+}
+
+/* Estilos para pantallas más pequeñas (máximo 600px de ancho) */
+@media (max-width: 600px) {
+  .headerContainer {
+    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+  }
+}
