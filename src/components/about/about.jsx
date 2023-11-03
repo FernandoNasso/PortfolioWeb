@@ -5,9 +5,7 @@ const About = () => {
     return (
         <div className={styles.aboutContainer}>
             <h1>About me</h1>
-            <p>Hola, soy Fernando!</p>
-            <p>Graduado en el bootcamp de Henry</p>
-            <p>desde Cordoba, Argentina</p>
+            <p>Hola, soy Fernando! Graduado en el bootcamp de Henry. Desde Cordoba, Argentina.</p>
             <p>en constante busqueda del desarrollo personal y profesional</p>
         </div>
     );

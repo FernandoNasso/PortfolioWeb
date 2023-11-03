@@ -1,0 +1,26 @@
+.proyectsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .cardContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .projectCard {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+  
+  .projectCard:hover {
+    transform: scale(1.05);
+  }
+  

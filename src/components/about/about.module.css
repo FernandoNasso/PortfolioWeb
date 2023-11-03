@@ -15,13 +15,7 @@
   }
   
   .aboutContainer p {
-    font-size: 18px;
+    font-size: 26px;
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente de color negro */
-    padding: 10px; /* Agrega relleno para separar el texto del fondo */
-    border-radius: 10px; /* Agrega esquinas redondeadas */
-    display: inline-block; /* Hace que la caja se ajuste al texto */
-    padding: 10px;
-    margin: 10px;
   }
   
