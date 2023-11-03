@@ -1,0 +1,27 @@
+.aboutContainer {
+    padding: 10px;
+    background-color: transparent;
+  }
+  
+  .aboutContainer h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    background-color: #4fc3dc99; /* Cambia el color de fondo a tu elección */
+    color: #000000; /* Cambia el color del texto a blanco o a tu elección */
+    padding: 10px; /* Añade relleno para que la caja se vea bien */
+    border-radius: 10px; /* Agrega esquinas redondeadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Agrega una sombra suave */
+    display: inline-block; /* Hace que la caja se ajuste al texto */
+  }
+  
+  .aboutContainer p {
+    font-size: 18px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente de color negro */
+    padding: 10px; /* Agrega relleno para separar el texto del fondo */
+    border-radius: 10px; /* Agrega esquinas redondeadas */
+    display: inline-block; /* Hace que la caja se ajuste al texto */
+    padding: 10px;
+    margin: 10px;
+  }
+  

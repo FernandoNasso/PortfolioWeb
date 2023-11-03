@@ -20,20 +20,62 @@ const Header = () => {
           <h2>FullStack Developer</h2>
         </div>
         <div className={styles.iconsContainer}>
-          <RiJavascriptFill className={styles.reactIcon} />
-          <SiHtml5 className={styles.reactIcon} />
-          <SiCss3 className={styles.reactIcon} />
-          <SiRedux className={styles.reactIcon} />
-          <SiReact className={styles.reactIcon} />
-          <SiVite className={styles.reactIcon} />
+          <div className={styles.iconWrapper}>
+            <RiJavascriptFill className={styles.reactIcon} />
+            <span className={styles.iconName}>JavaScript</span>
+          </div>
+          <div className={styles.iconWrapper}>
+            <SiHtml5 className={styles.reactIcon} />
+            <span className={styles.iconName}>HTML</span>
+          </div>
+          <div className={styles.iconWrapper}>
+            <SiCss3 className={styles.reactIcon} />
+            <span className={styles.iconName}>Css</span>
+          </div>
+          <div className={styles.iconWrapper}>
+            <SiRedux className={styles.reactIcon} />
+            <span className={styles.iconName}>Redux</span>
+          </div>
+          <div className={styles.iconWrapper}>
+            <SiReact className={styles.reactIcon} />
+            <span className={styles.iconName}>React</span>
+          </div>
+          <div className={styles.iconWrapper}>
+            <SiVite className={styles.reactIcon} />
+            <span className={styles.iconName}>Vite</span>
+          </div>
+          <div className={styles.iconWrapper}>
           <SiNodedotjs className={styles.reactIcon} />
+          <span className={styles.iconName}>Node.JS</span>
+          </div>
+          <div className={styles.iconWrapper}>
           <SiExpress className={styles.reactIcon} />
+          <span className={styles.iconName}>Express</span>
+          </div>
+          <div className={styles.iconWrapper}>
           <BiLogoPostgresql className={styles.reactIcon} />
+          <span className={styles.iconName}>PostgreSQL</span>
+          </div>
+          <div className={styles.iconWrapper}>
           <FaDatabase className={styles.reactIcon} />
+          <span className={styles.iconName}>Database</span>
+          </div>
+          <div className={styles.iconWrapper}>
           <FaNpm className={styles.reactIcon} />
+          <span className={styles.iconName}>NPM</span>
+          </div>
+          <div className={styles.iconWrapper}>
           <BiLogoGit className={styles.reactIcon} />
+          <span className={styles.iconName}>Git</span>
+          </div>
+          <div className={styles.iconWrapper}>
           <BiLogoGithub className={styles.reactIcon} />
+          <span className={styles.iconName}>GitHub</span>
+          </div>
+          <div className={styles.iconWrapper}>
           <SiSequelize className={styles.reactIcon} />
+          <span className={styles.iconName}>Sequelize</span>
+          </div>
         </div>
       </div>
     </div>
