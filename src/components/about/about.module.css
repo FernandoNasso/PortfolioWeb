@@ -1,21 +1,83 @@
+/* about.module.css */
 .aboutContainer {
-    padding: 10px;
-    background-color: transparent;
+  text-align: left;
+  padding: 10px;
+  background: transparent;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.aboutContainer h1 {
+  font-size: 80px;
+  color: #ffffff;
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+}
+
+.educationTitle {
+  font-size: 35px;
+  color: aquamarine;
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.locationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Colocar en el angulo superior derecho */
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+  font-size: 26px;
+  margin: 5px 5px 100px;
+  color: white;
+}
+
+.locationIcon {
+  margin-right: 5px;
+}
+
+.legend {
+  font-size: 50px;
+  color: #d8d8d8;
+  grid-column: 2;
+  grid-row: 2;
+  text-align: right; /* Alinear en el angulo inferior derecho */
+  margin: 0;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .aboutContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    margin: 10px;
   }
-  
+
   .aboutContainer h1 {
-    font-size: 34px;
-    margin-bottom: 20px;
-    background-color: #4fc3dc99; /* Cambia el color de fondo a tu elección */
-    color: #000000; /* Cambia el color del texto a blanco o a tu elección */
-    padding: 10px; /* Añade relleno para que la caja se vea bien */
-    border-radius: 10px; /* Agrega esquinas redondeadas */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Agrega una sombra suave */
-    display: inline-block; /* Hace que la caja se ajuste al texto */
+    font-size: 50px;
   }
-  
-  .aboutContainer p {
-    font-size: 26px;
-    color: #ffffff;
+
+  .educationTitle {
+    font-size: 24px;
+    margin-top: 10px;
   }
-  
+
+  .locationContainer {
+    font-size: 18px;
+    justify-content: center; /* Centrar en pantalla pequeña */
+    margin: 5px 5px 5px 5px;
+  }
+
+  .legend {
+    font-size: 30px;
+    text-align: center; /* Centrar en pantalla pequeña */
+  }
+}

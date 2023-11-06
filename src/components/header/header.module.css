@@ -93,8 +93,29 @@
 
 
 /* Estilos para pantallas más pequeñas (máximo 600px de ancho) */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .headerContainer {
     grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    padding: 5px;
+  }
+
+  .headerImage {
+    margin: 0px;
+  }
+
+  .textContainer1 {
+    margin: 10px;
+  }
+
+  .textContainer1 h1 {
+    margin-left: 0px;
+    font-size: 32px;
+  }
+  .rightColumn {
+    margin: 10px;
+  }
+
+  .textContainer2 h2 {
+    font-size: 30px;
   }
 }
