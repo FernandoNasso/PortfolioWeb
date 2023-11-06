@@ -23,11 +23,12 @@
 
 .textContainer1 h1 {
   font-size: 45px;
+  font-family: roboto mono;
   background-color: rgba(80, 195, 220, 0.3); /* Cambia el último valor para controlar la transparencia */
   color: #ffffff;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
   display: inline-block;
   margin-left: 40px;
   text-align: center;
@@ -45,6 +46,7 @@
 
 .textContainer2 h2 {
   font-size: 35px;
+  font-family: roboto mono;
   margin: 0;
   background-color: rgba(255, 46, 120, 0.384);
   color: #ffffff;
@@ -96,20 +98,24 @@
 @media (max-width: 768px) {
   .headerContainer {
     grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
-    padding: 5px;
+    padding: 0px;
+    align-items: center;
   }
 
   .headerImage {
+    max-width: 100px;
     margin: 0px;
+    padding: 5PX;
   }
 
   .textContainer1 {
-    margin: 10px;
+    margin: 5px;
   }
 
   .textContainer1 h1 {
     margin-left: 0px;
     font-size: 32px;
+    padding: 3px;
   }
   .rightColumn {
     margin: 10px;
@@ -118,4 +124,5 @@
   .textContainer2 h2 {
     font-size: 30px;
   }
+
 }
