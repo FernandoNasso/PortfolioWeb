@@ -30,7 +30,7 @@ const projects = [
 const Proyects = () => {
   return (
     <div className={styles.proyectsContainer}>
-      <h1>My featured projects:</h1>
+      <h1>My featured projects</h1>
       <div className={styles.cardContainer}>
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />

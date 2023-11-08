@@ -1,0 +1,44 @@
+/* Estilos para la sección de contacto */
+.contactSection {
+    text-align: center;
+    padding: 0.6rem;
+    background-color: rgba(37, 36, 36, 0.034);
+}
+
+.contactSection h1 {
+    font-size: 1.9rem; 
+    font-family: roboto mono;
+    background-color: rgb(37, 36, 36);
+    color: #ffffff;
+    padding: 0.4rem; 
+    border-radius: 0.625rem; 
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
+    display: inline-block;
+}
+
+/* Estilos para los iconos como botones cuadrados */
+.contactIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.contactIcons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem;
+    font-size: 3rem;
+    text-decoration: none;
+    color: rgb(37, 36, 36);
+    background-color: #d8d8d8;
+    border: 1px solid rgb(144, 255, 218); 
+    border-radius: 0.6rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contactIcons a:hover {
+    background-color: rgba(80, 194, 220, 0.507); /* Cambia el color de fondo al hacer hover sobre el botón */
+    color: #d8d8d8; /* Cambia el color del icono al hacer hover */
+}

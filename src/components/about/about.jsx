@@ -12,7 +12,7 @@ const About = () => {
       <div className={styles.rightColumn}>
         <div className={styles.locationContainer}>
           <FaLocationDot className={styles.locationIcon} />
-          <p>From Cordoba, Argentina.</p>
+          <p>From: Calamuchita | Cordoba | Argentina.</p>
         </div>
         <p className={styles.legend}>Constantly seeking personal and professional development.</p>
       </div>

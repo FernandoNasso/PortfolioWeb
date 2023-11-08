@@ -3,6 +3,9 @@ import ParticleBackground from './components/particleBackground/particleBackgrou
 import Header from "./components/header/header";
 import About from "./components/about/about";
 import Proyects from "./components/proyects/proyects";
+import Contact from './components/contact/contact';
+import Footer from "./components/footer/footer";
+
 function App() {
   return (
     <div>
@@ -10,6 +13,8 @@ function App() {
       <Header />
       <About />
       <Proyects />
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
