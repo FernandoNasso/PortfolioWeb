@@ -1,61 +1,124 @@
 .projectCard {
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
-    max-width: 300px;
-    transition: transform 0.2s;
-    cursor: pointer;
-  }
-  
-  .projectCard h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .projectCard img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .projectCard button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  .projectDetails {
-    background: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-top: 10px;
-  }
-  
-  .projectDetails h3 {
-    font-size: 18px;
-  }
-  
-  .projectDetails p {
-    margin: 10px 0;
-  }
-  
-  .projectDetails a {
-    display: block;
-    color: #007bff;
-    text-decoration: none;
-    margin: 5px 0;
-  }
-  
-  .projectDetails a:hover {
-    text-decoration: underline;
-  }
-  
-  .projectDetails button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
+  width: calc(33.3% - 1.2rem);
+  height: 18.75rem;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  position: relative;
+  perspective: 1000px;
+}
+
+
+.projectCard.flipped {
+  transform: rotateY(180deg);
+}
+
+.projectCard > div {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 95%;
+}
+
+.front {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(0deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.625rem;
+  padding: 0.4rem;
+  background-color: rgb(37, 36, 36);
+  font-size: 1rem;
+  color: #d8d8d8;
+}
+
+.front h2 {
+  font-family: 'Roboto Mono';
+  font-size: 1.25rem;
+  margin: 0.4rem;
+}
+
+.front img {
+  width: 100%; /* Asegura que todas las imágenes tengan el mismo ancho */
+  height: 100%;
+  border-radius: 5%;
+  padding: 0.4rem;
+}
+
+.front button {
+  background: rgb(144, 255, 218);
+  color: rgb(37, 36, 36);
+  border-radius: 5%;
+  padding: 0.4rem;
+  cursor: pointer;
+  box-shadow: 0 0.125rem 0.15rem rgba(0, 0, 0, 0.9);
+}
+
+.front button:hover {
+  background: rgba(255, 46, 120, 0.384);
+  color: #d8d8d8;
+}
+
+.back {
+  transform: rotateY(180deg);
+  transform-origin: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #d8d8d8;
+  border: 1px solid #ccc;
+  border-radius: 0.625rem;
+  padding: 0.4rem;
+  color: rgb(37, 36, 36);
+}
+
+.back h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem;
+  padding: 0.4rem;
+}
+
+.back p {
+  font-size: 1.1rem;
+  margin: 0.5rem;
+  padding: 0.4rem;
+}
+
+.back .linksContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 0.8rem;
+}
+
+.back a {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem;
+  text-decoration: none;
+}
+
+.reactIcon {
+  padding: 0.2rem;
+}
+
+.back button {
+  font-size: 0.98rem;
+  background: rgb(144, 255, 218);
+  color: rgb(0, 0, 0);
+  border-radius: 5%;
+  padding: 0.38rem;
+  cursor: pointer;
+  box-shadow: 0 0.125rem 0.15rem rgba(0, 0, 0, 0.9);
+}
+

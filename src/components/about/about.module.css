@@ -1,68 +1,67 @@
-/* about.module.css */
 .aboutContainer {
-  font-family: roboto mono;
+  font-family: 'Roboto Mono', monospace; 
   text-align: left;
-  padding: 10px;
   background: transparent;
-  margin: 20px;
+  margin: 0.65rem; 
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 20px;
+  gap: 1.25rem; 
 }
 
 .aboutContainer h1 {
-  font-size: 70px;
-  color: #ffffff;
+  font-size: 4.375rem; 
+  color: #d8d8d8;
   grid-column: 1;
   grid-row: 1;
-  margin: 0;
+  margin: 0.1rem;
   background-color: rgb(37, 36, 36);
-  padding: 1px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  padding: 0.4rem; 
+  border-radius: 0.625rem; 
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.9);
 }
 
 .educationTitle {
-  font-size: 30px;
-  color: rgb(0, 0, 0);
+  font-size: 1.875rem; 
+  font-family: 'Roboto Mono';
+  color:rgb(144, 255, 218);
   grid-column: 1;
   grid-row: 2;
   margin: 0;
-  margin-top: 50px;
-  background-color: rgba(255, 46, 120);
-  padding: 3px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  margin-top: 3.125rem; 
+  background-color: rgba(80, 194, 220, 0.171);
+  padding: 0.4rem; 
+  border-radius: 0.625rem; 
+  box-shadow: 0 0.125rem 0.25rem rgba(0.9, 0.9, 0.9, 1.5);
 }
 
 .locationContainer {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Colocar en el angulo superior derecho */
+  justify-content: flex-end; /* Colocar en el ángulo superior derecho */
   grid-column: 2;
   grid-row: 1;
   margin: 0;
-  font-size: 26px;
-  margin: 0px 5px 60px;
-  color: white;
+  font-size: 1.625rem; 
+  margin: 0px 0.3125rem 3.75rem; 
+  color: #d8d8d8;
 }
 
 .locationIcon {
-  margin-right: 5px;
+  margin-right: 0.3125rem; 
 }
 
 .legend {
-  font-size: 45px;
+  font-size: 2.8125rem; 
   color: #d8d8d8;
   grid-column: 2;
   grid-row: 2;
-  text-align: right; /* Alinear en el angulo inferior derecho */
-  margin: 0;
+  text-align: right; /* Alinear en el ángulo inferior derecho */
+  margin: 0.3rem;
   background-color: rgb(37, 36, 36);
-  padding: 3px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  padding: 0.4rem; 
+  border-radius: 0.625rem; 
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.9);
 }
 
 /* Estilos para pantallas pequeñas */
@@ -70,28 +69,33 @@
   .aboutContainer {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
-    gap: 10px;
-    margin: 5px;
+    gap: 0.125rem; 
+    margin: 0.3125rem; 
   }
 
   .aboutContainer h1 {
-    font-size: 40px;
+    font-size: 2.5rem; 
   }
 
   .educationTitle {
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 0px;
+    font-size: 1.155rem; 
+    margin-top: 0.625rem; 
+    margin-bottom: 0;
   }
 
   .locationContainer {
-    font-size: 16px;
+    font-size: 1rem; 
     justify-content: center; /* Centrar en pantalla pequeña */
-    margin: 0px 5px 5px 5px;
+    margin:0.4125rem 
+  }
+
+  .locationContainer p {
+    margin: 0.15rem;
   }
 
   .legend {
-    font-size: 20px;
+    font-size: 1.25rem; 
     text-align: center; /* Centrar en pantalla pequeña */
+    margin: 0.15rem;
   }
 }

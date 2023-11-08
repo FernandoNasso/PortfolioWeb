@@ -1,26 +1,23 @@
 .proyectsContainer {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0.4rem;
+  }
+
+  .proyectsContainer h1 {
+    font-size: 1.9rem; 
+    font-family: roboto mono;
+    background-color: rgb(37, 36, 36);
+    color: #ffffff;
+    padding: 0.4rem; 
+    border-radius: 0.625rem; 
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
+    display: inline-block;
   }
   
   .cardContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-  }
-  
-  .projectCard {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    max-width: 300px;
-    transition: transform 0.2s;
-    cursor: pointer;
-  }
-  
-  .projectCard:hover {
-    transform: scale(1.05);
+    margin: 0.4rem;
   }
   
