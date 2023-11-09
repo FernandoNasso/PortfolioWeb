@@ -21,3 +21,25 @@
     margin: 0.4rem;
   }
   
+  @media (max-width: 768px) {
+    /* Estilos para la sección de proyectos en pantallas de celulares */
+    .proyectsContainer {
+      margin: 0.1rem;
+    }
+  
+    .proyectsContainer h1 {
+      font-size: 1.5rem;
+      padding: 0.4rem;
+      border-radius: 0.625rem;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
+      display: inline-block;
+      margin: 0.3rem;
+    }
+  
+    /* Estilos para los contenedores de tarjetas en pantallas de celulares */
+    .cardContainer {
+      flex-direction: column; /* Cambia la dirección de los elementos a columna */
+      margin: 0.001rem;
+      padding: 0.001rem;
+    }
+  }

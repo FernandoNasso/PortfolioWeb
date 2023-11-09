@@ -6,12 +6,12 @@
 }
 
 .contactSection h1 {
-    font-size: 1.9rem; 
-    font-family: roboto mono;
+    font-size: 1.9rem;
+    font-family: 'Roboto Mono'; /* Agrega comillas al nombre de la fuente */
     background-color: rgb(37, 36, 36);
     color: #ffffff;
-    padding: 0.4rem; 
-    border-radius: 0.625rem; 
+    padding: 0.4rem;
+    border-radius: 0.625rem;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
     display: inline-block;
 }
@@ -33,12 +33,33 @@
     text-decoration: none;
     color: rgb(37, 36, 36);
     background-color: #d8d8d8;
-    border: 1px solid rgb(144, 255, 218); 
+    border: 1px solid rgb(144, 255, 218);
     border-radius: 0.6rem;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .contactIcons a:hover {
-    background-color: rgba(80, 194, 220, 0.507); /* Cambia el color de fondo al hacer hover sobre el botón */
-    color: #d8d8d8; /* Cambia el color del icono al hacer hover */
+    background-color: rgba(80, 194, 220, 0.507);
+    color: #d8d8d8;
 }
+
+/* Media Query para dispositivos móviles */
+    @media (max-width: 768px) {
+        .contactSection h1 {
+            font-size: 1.6rem; /* Reducimos el tamaño del encabezado para dispositivos móviles */
+            margin: 0.3rem;
+        }
+    
+        .contactIcons {
+            flex-direction: row; /* Cambiamos la dirección de los iconos a fila en dispositivos móviles */
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente fila si no caben en una sola */
+            justify-content: center; /* Centramos los iconos horizontalmente */
+        }
+    
+        .contactIcons a {
+            width: 40%; /* Establecemos un ancho del 45% para mostrar dos columnas */
+            height: 7rem; /* Mantenemos la altura deseada */
+            margin: 1rem; /* Margen para separar los iconos */
+        }
+    }
+

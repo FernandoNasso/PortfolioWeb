@@ -25,11 +25,11 @@ const ProjectCard = ({ name, description, deployLink, githubLink, image }) => {
         <div className={styles.linksContainer}>
           {githubLink && (
             <a href={githubLink} target="_blank" rel="noopener noreferrer">
-              <BiLogoGithub className={styles.reactIcon} /> Repository
-            </a>
+              <BiLogoGithub className={styles.reactIcon} />
+            </a>            
           )}
           {deployLink && (
-            <a href={deployLink} target="_blank" rel="noopener noreferrer">
+            <a href={deployLink} target="_blank" rel="noopener noreferrer" className={styles.deploy}>
               Deploy
             </a>
           )}
