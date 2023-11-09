@@ -1,4 +1,6 @@
 .headerContainer {
+  font-family: 'Roboto Mono';
+  font-weight: lighter;
   background: rgba(0, 0, 0, 0.93);
   display: grid;
   grid-template-columns: 1fr 1fr; /* Divide el espacio en dos columnas */
@@ -8,6 +10,7 @@
 
 .leftColumn {
   font-family: 'Roboto Mono';
+  font-weight: lighter;
   display: flex; 
   align-items: center; 
   padding: 0.0625rem; 
@@ -24,6 +27,7 @@
 .textContainer1 h1 {
   font-size: 3.6125rem; 
   font-family: 'Roboto Mono';
+  font-weight: lighter;
   background-color: rgba(80, 195, 220, 0.3);
   color: #ffffff;
   padding: 0.6rem; 
@@ -36,6 +40,7 @@
 
 .rightColumn {
   font-family: 'Roboto Mono';
+  font-weight: lighter;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,8 +51,9 @@
 .textContainer2 h2 {
   font-size: 1.9rem; 
   font-family: 'Roboto Mono';
+  font-weight: lighter;
   margin: 0;
-  background-color: rgba(255, 46, 120, 0.384);
+  background-color: rgba(80, 195, 220, 0.3);
   color: #ffffff;
   padding: 0.8625rem; 
   border-radius: 0.625rem; 
@@ -92,6 +98,7 @@
 
 .iconName span {
   font-family: 'Roboto Mono';
+  font-weight: lighter;
 }
 
 .iconWrapper:hover .iconName {
@@ -101,6 +108,7 @@
 @media (max-width: 768px) {
   .headerContainer {
     font-family: 'Roboto Mono';
+    font-weight: lighter;
     grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
     padding: 0;
     align-items: center;
@@ -146,6 +154,7 @@
 
   .iconName span{
     font-family: 'Roboto Mono';
+    font-weight: lighter;
     font-size: 1rem;
     background-color: black;
     border-radius: 5%;
