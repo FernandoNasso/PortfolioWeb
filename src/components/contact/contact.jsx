@@ -8,7 +8,7 @@ const Contact = () => {
         <div className={styles.contactSection}>
             <h1>Contact me</h1>
             <div className={styles.contactIcons}>
-                <a href="https://wa.me/1130993627" target="_blank" rel="noopener noreferrer" >
+                <a href="https://wa.me/+5491130993627" target="_blank" rel="noopener noreferrer" >
                     <FaWhatsapp />
                 </a>
                 <a href="mailto:fernando.nasso@gmail.com" target="_blank" rel="noopener noreferrer" >
