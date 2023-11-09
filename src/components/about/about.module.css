@@ -84,13 +84,13 @@
   }
 
   .locationContainer {
-    font-size: 1rem; 
     justify-content: center; /* Centrar en pantalla pequeña */
     margin:0.4125rem 
   }
 
   .locationContainer p {
-    margin: 0.15rem;
+    margin: 0.25rem;
+    font-size: 0.9rem;
   }
 
   .legend {

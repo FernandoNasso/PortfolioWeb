@@ -43,6 +43,54 @@
     color: #d8d8d8;
 }
 
+.cvDownload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem; /* Ajusta el margen superior según sea necesario */
+}
+
+.cvDownload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem; /* Ajusta el margen superior según sea necesario */
+}
+
+.cvDownload a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #d8d8d8;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid #d8d8d8;
+    border-radius: 0.6rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cvDownload a:hover {
+    background-color: #d8d8d8;
+    color: rgb(37, 36, 36);
+}
+
+.iconCV {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3.8rem;
+    margin: 0.3rem; /* Ajusta el espacio entre el icono y el texto según sea necesario */
+}
+
+.cvText {
+    font-family: 'Roboto Mono';
+    font-size: 0.95rem; /* Ajusta el tamaño de la fuente del texto según sea necesario */
+}
+
 /* Media Query para dispositivos móviles */
     @media (max-width: 768px) {
         .contactSection h1 {

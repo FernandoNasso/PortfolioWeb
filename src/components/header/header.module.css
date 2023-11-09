@@ -7,26 +7,26 @@
 }
 
 .leftColumn {
-  display: flex; /* Activa el modelo de caja flexible */
-  align-items: center; /* Centra verticalmente los elementos */
-  padding: 0.0625rem; /* Convertido a rem */
+  display: flex; 
+  align-items: center; 
+  padding: 0.0625rem; 
 
 }
 
 .headerImage {
   border-radius: 10%;
-  max-width: 7.5rem; /* Convertido a rem */
-  padding: 0.3rem; /* Convertido a rem */
-  margin: 0.5rem; /* Convertido a rem */
+  max-width: 7.5rem; 
+  padding: 0.3rem; 
+  margin: 0.5rem; 
 }
 
 .textContainer1 h1 {
-  font-size: 3.6125rem; /* Convertido a rem */
+  font-size: 3.6125rem; 
   font-family: roboto mono;
   background-color: rgba(80, 195, 220, 0.3);
   color: #ffffff;
-  padding: 0.6rem; /* Convertido a rem */
-  border-radius: 0.625rem; /* Convertido a rem */
+  padding: 0.6rem; 
+  border-radius: 0.625rem; 
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.9);
   display: inline-block;
   text-align: left;
@@ -42,13 +42,13 @@
 }
 
 .textContainer2 h2 {
-  font-size: 1.9rem; /* Convertido a rem */
+  font-size: 1.9rem; 
   font-family: roboto mono;
   margin: 0;
   background-color: rgba(255, 46, 120, 0.384);
   color: #ffffff;
-  padding: 0.8625rem; /* Convertido a rem */
-  border-radius: 0.625rem; /* Convertido a rem */
+  padding: 0.8625rem; 
+  border-radius: 0.625rem; 
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
   display: inline-block;
 }
@@ -64,32 +64,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0.3125rem; /* Convertido a rem */
+  margin: 0.3125rem; 
   cursor: pointer;
   position: relative;
 }
 
 .reactIcon {
-  font-size: 2rem; /* Convertido a rem */
-  /* Puedes agregar estilos adicionales para el icono si lo deseas */
+  font-size: 2rem; 
 }
 
 .iconName {
-  margin-top: 0.3125rem; /* Convertido a rem */
-  font-size: 1rem; /* Convertido a rem */
+  margin-top: 0.3125rem; 
+  font-size: 1rem; 
   opacity: 0;
   position: absolute;
-  bottom: -1.25rem; /* Convertido a rem */
+  bottom: -1.25rem; 
   left: 50%;
   transform: translateX(-50%);
-  /* Puedes personalizar más estilos para el nombre del icono aquí */
+  background-color: rgb(0, 0, 0);
+  padding: 0.1rem;
+  color: white;
+  border-radius: 0.05rem;
+  z-index: 1;
 }
 
 .iconWrapper:hover .iconName {
   opacity: 1;
 }
 
-/* Estilos para pantallas más pequeñas (máximo 600px de ancho) */
 @media (max-width: 768px) {
   .headerContainer {
     grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
@@ -98,32 +100,39 @@
   }
 
   .headerImage {
-    max-width: 6.25rem; /* Convertido a rem */
+    max-width: 6.25rem; 
     margin: 0rem 1rem 0rem 1rem;
-    padding: 0.3525rem; /* Convertido a rem */
+    padding: 0.3rem; 
   }
 
   .textContainer1 {
-    margin: 0.2125rem; /* Convertido a rem */
+    margin: 0.2125rem; 
     align-items: center;
   }
 
   .textContainer1 h1 {
-    font-size: 2.3rem; /* Convertido a rem */
-    padding: 0.1675rem; /* Convertido a rem */
+    font-size: 2.2rem; 
+    padding: 0.5rem; 
     max-width: 85%;
   }
 
   .rightColumn {
-    margin: 0.625rem; /* Convertido a rem */
+    margin: 0.625rem; 
   }
 
   .textContainer2 h2 {
-    font-size: 1.875rem; /* Convertido a rem */
+    font-size: 1.875rem; 
     padding: 0.2625rem;
   }
 
   .iconsContainer {
     padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+  }
+
+  .iconName span{
+    font-size: 1rem;
+    background-color: black;
+    border-radius: 5%;
+    color: #ffffff;
   }
 }

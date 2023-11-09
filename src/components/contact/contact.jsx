@@ -1,5 +1,6 @@
 import React from "react";
 import { FaWhatsapp, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa"; // Asumiendo que utilizas Font Awesome
+import { LuFileDown } from "react-icons/lu";
 import styles from "./contact.module.css";
 
 const Contact = () => {
@@ -20,6 +21,15 @@ const Contact = () => {
                     <FaLinkedin />
                 </a>
             </div>
+            <div className={styles.cvDownload}>
+                <a href="https://drive.google.com/file/d/1P3NDKk3qBywbLlxxHLoWYlf58EuFtgWp/view?usp=drive_link" download="Fernando_Nasso_CV.pdf">
+                <div className={styles.iconCV}>
+                    <LuFileDown />
+                </div>
+                    <span className={styles.cvText}>Resume</span>
+                </a>
+            </div>
+
         </div>
     );
 };
