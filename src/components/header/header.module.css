@@ -7,6 +7,7 @@
 }
 
 .leftColumn {
+  font-family: 'Roboto Mono';
   display: flex; 
   align-items: center; 
   padding: 0.0625rem; 
@@ -22,7 +23,7 @@
 
 .textContainer1 h1 {
   font-size: 3.6125rem; 
-  font-family: roboto mono;
+  font-family: 'Roboto Mono';
   background-color: rgba(80, 195, 220, 0.3);
   color: #ffffff;
   padding: 0.6rem; 
@@ -34,6 +35,7 @@
 }
 
 .rightColumn {
+  font-family: 'Roboto Mono';
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +45,7 @@
 
 .textContainer2 h2 {
   font-size: 1.9rem; 
-  font-family: roboto mono;
+  font-family: 'Roboto Mono';
   margin: 0;
   background-color: rgba(255, 46, 120, 0.384);
   color: #ffffff;
@@ -74,6 +76,7 @@
 }
 
 .iconName {
+  font-family: 'Roboto Mono';
   margin-top: 0.3125rem; 
   font-size: 1rem; 
   opacity: 0;
@@ -85,7 +88,10 @@
   padding: 0.1rem;
   color: white;
   border-radius: 0.05rem;
-  z-index: 1;
+}
+
+.iconName span {
+  font-family: 'Roboto Mono';
 }
 
 .iconWrapper:hover .iconName {
@@ -94,6 +100,7 @@
 
 @media (max-width: 768px) {
   .headerContainer {
+    font-family: 'Roboto Mono';
     grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
     padding: 0;
     align-items: center;
@@ -106,21 +113,25 @@
   }
 
   .textContainer1 {
+    font-family: 'Roboto Mono';
     margin: 0.2125rem; 
     align-items: center;
   }
 
   .textContainer1 h1 {
+    font-family: 'Roboto Mono';
     font-size: 2.2rem; 
     padding: 0.5rem; 
     max-width: 85%;
   }
 
   .rightColumn {
+    font-family: 'Roboto Mono';
     margin: 0.625rem; 
   }
 
   .textContainer2 h2 {
+    font-family: 'Roboto Mono';
     font-size: 1.875rem; 
     padding: 0.2625rem;
   }
@@ -130,9 +141,11 @@
   }
 
   .iconName span{
+    font-family: 'Roboto Mono';
     font-size: 1rem;
     background-color: black;
     border-radius: 5%;
-    color: #ffffff;
+    color: #ffffff;   
+    z-index: 1;
   }
 }

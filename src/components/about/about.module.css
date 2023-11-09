@@ -1,5 +1,5 @@
 .aboutContainer {
-  font-family: 'Roboto Mono', monospace; 
+  font-family: 'Roboto Mono'; 
   text-align: left;
   background: transparent;
   margin: 0.65rem; 
@@ -10,6 +10,8 @@
 }
 
 .aboutContainer h1 {
+  font-family: 'Roboto Mono';
+  font-weight: lighter;
   font-size: 4.375rem; 
   color: #d8d8d8;
   grid-column: 1;
@@ -36,6 +38,7 @@
 }
 
 .locationContainer {
+  font-family: 'Roboto Mono';
   display: flex;
   align-items: center;
   justify-content: flex-end; /* Colocar en el ángulo superior derecho */
@@ -52,6 +55,7 @@
 }
 
 .legend {
+  font-family: 'Roboto Mono';
   font-size: 2.8125rem; 
   color: #d8d8d8;
   grid-column: 2;
@@ -67,6 +71,7 @@
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
   .aboutContainer {
+    font-family: 'Roboto Mono';
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
     gap: 0.125rem; 
@@ -74,26 +79,31 @@
   }
 
   .aboutContainer h1 {
+    font-family: 'Roboto Mono';
     font-size: 2.5rem; 
   }
 
   .educationTitle {
+    font-family: 'Roboto Mono';
     font-size: 1.155rem; 
     margin-top: 0.625rem; 
     margin-bottom: 0;
   }
 
   .locationContainer {
+    font-family: 'Roboto Mono';
     justify-content: center; /* Centrar en pantalla pequeña */
     margin:0.4125rem 
   }
 
   .locationContainer p {
+    font-family: 'Roboto Mono';
     margin: 0.25rem;
     font-size: 0.9rem;
   }
 
   .legend {
+    font-family: 'Roboto Mono';
     font-size: 1.25rem; 
     text-align: center; /* Centrar en pantalla pequeña */
     margin: 0.15rem;

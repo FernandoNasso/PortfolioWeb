@@ -6,6 +6,7 @@
   .proyectsContainer h1 {
     font-size: 1.9rem; 
     font-family: roboto mono;
+    font-weight: lighter;
     background-color: rgb(37, 36, 36);
     color: #ffffff;
     padding: 0.4rem; 

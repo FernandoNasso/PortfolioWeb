@@ -1,5 +1,7 @@
 /* Estilos para el pie de página */
 .footer {
+    font-family: 'Roboto Mono';
+    font-weight: lighter;
     background-color: rgb(37, 36, 36);
     color: #d8d8d8;
     text-align: center;
@@ -10,8 +12,9 @@
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
     .footer {
+        font-family: 'Roboto Mono';
+        font-weight: lighter;
         font-size: 0.5rem; /* Ajustamos el tamaño de fuente para dispositivos móviles */
         padding: 0.4rem;
-        font-weight:lighter;
     }
 }
