@@ -1,12 +1,12 @@
 /* Estilos para la sección de contacto */
 .contactSection {
     text-align: center;
-    padding: 0.6rem;
+    padding: 2vw;
     background-color: rgba(37, 36, 36, 0.034);
 }
 
 .contactSection h1 {
-    font-size: 1.9rem;
+    font-size: 2.5vw;
     font-family: 'Roboto Mono'; 
     font-weight: lighter;
     background-color: rgb(37, 36, 36);

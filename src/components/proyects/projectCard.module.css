@@ -1,20 +1,16 @@
-/* .projectCard {
-  width: calc(33.3% - 1.2rem);
-  height: 18.75rem;
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
-  position: relative;
-  perspective: 1000px;
-} */
 .projectCard {
-  width: calc(33.3vw - 1.6vw);
+  width: calc(33.33%); 
   height: 23.8vw;
+  margin-right: 0.5vw; 
   transform-style: preserve-3d;
   transition: transform 0.5s;
   position: relative;
   perspective: 1000px;
 }
-
+/* Estilo para la última tarjeta para eliminar el margen derecho adicional */
+.projectCard:last-child {
+  margin-right: 0;
+}
 
 .projectCard.flipped {
   transform: rotateY(180deg);
@@ -29,23 +25,6 @@
   height: 95%;
 }
 
-/* .front {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: rotateY(0deg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 0.625rem;
-  padding: 0.4rem;
-  background-color: rgb(37, 36, 36);
-  font-size: 1rem;
-  color: #d8d8d8;
-} */
 .front {
   backface-visibility: hidden;
   position: absolute;
@@ -64,42 +43,19 @@
   color: #d8d8d8;
 }
 
-/* .front h2 {
-  font-family: 'Roboto Mono';
-  font-weight: lighter;
-  font-size: 1.25rem;
-  margin: 0.4rem;
-} */
 .front h2 {
   font-family: 'Roboto Mono';
   font-weight: lighter;
-  font-size: 1.5vw; /* Ajustamos el tamaño */
-  margin: 0.5vw; /* Ajustamos el margen */
+  font-size: 1.5vw; 
+  margin: 0.5vw; 
 }
 
-/* .front img {
-  width: 100%; 
-  height: 100%;
-  border-radius: 5%;
-  padding: 0.4rem;
-} */
 .front img {
   width: 100%;
-  height: auto; /* Cambiamos la altura para mantener la proporción */
-  padding: 0.5vw; /* Ajustamos el padding */
+  height: auto; 
+  padding: 0.5vw; 
 }
 
-/* .front button {
-  font-size: 0.98rem;
-  font-family: 'Roboto Mono';
-  background: #d8d8d8;
-  color: rgb(37, 36, 36);
-  border: 0.2rem solid rgb(37, 36, 36);
-  border-radius: 5%;
-  padding: 0.38rem;
-  cursor: pointer;
-  box-shadow: 0 0.125rem 0.15rem rgba(0, 0, 0, 0.9);
-} */
 .front button {
   font-size: 1.2vw;
   font-family: 'Roboto Mono';
@@ -108,37 +64,17 @@
   color: rgb(37, 36, 36);
   border: 0.2vw solid rgb(37, 36, 36);
   border-radius: 5%;
-  padding: 0.5vw; /* Ajustamos el padding */
+  padding: 0.5vw; 
   cursor: pointer;
   box-shadow: 0 0.125vw 0.15vw rgba(0, 0, 0, 0.9);
 }
 
-/* .front button:hover {
-  background: rgb(37, 36, 36);
-  color: #d8d8d8;
-  border: solid 0.2rem #d8d8d8;
-} */
 .front button:hover {
   background: rgb(37, 36, 36);
   color: #d8d8d8;
   border: solid 0.2vw #d8d8d8;
 }
 
-/* .back {
-  transform: rotateY(180deg);
-  transform-origin: center;
-  display: flex;
-  font-family: 'Roboto Mono';
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #d8d8d8;
-  border: 1px solid #ccc;
-  border-radius: 0.625rem;
-  padding: 0.4rem;
-  color: rgb(37, 36, 36);
-} */
 .back {
   transform: rotateY(180deg);
   transform-origin: center;
@@ -155,37 +91,20 @@
   color: rgb(37, 36, 36);
 }
 
-/* .back h3 {
-  font-size: 1.3rem;
-  margin: 0.2rem;
-  padding: 0.4rem;
-} */
 .back h3 {
   font-family: 'Roboto Mono';
   font-weight: lighter;
-  font-size: 1.5vw; /* Ajustamos el tamaño */
-  margin: 0.5vw; /* Ajustamos el margen */
+  font-size: 1.5vw; 
+  margin: 0.5vw; 
 }
 
-/* .back p {
-  font-size: 1.1rem;
-  margin: 0.4rem;
-  padding: 0.4rem;
-} */
 .back p {
-  font-size: 1.2vw; /* Ajustamos el tamaño */
+  font-size: 1.2vw; 
   text-align: justify;
-  margin: 0.5vw; /* Ajustamos el margen */
-  padding: 0.5vw; /* Ajustamos el padding */
+  margin: 0.5vw; 
+  padding: 0.5vw; 
 }
 
-/* .back .linksContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  padding: 0.5rem;
-} */
 .back .linksContainer {
   display: flex;
   justify-content: space-between;
@@ -194,65 +113,31 @@
   padding: 0.5vw;
 }
 
-/* .back a {
-  display: flex;
-  font-family: 'Roboto Mono';
-  align-items: center;
-  padding: 0.4rem;
-  text-decoration: none; 
-} */
 .back a {
   display: flex;
   font-family: 'Roboto Mono';
   align-items: center;
-  padding: 0.5vw; /* Ajustamos el padding */
+  padding: 0.5vw; 
   text-decoration: none;
 }
 
-/* .deploy {
-  font-family: 'Roboto Mono';
-  font-size: 1.2rem;
-  background: rgb(37, 36, 36);
-  color: #d8d8d8;
-  border-radius: 5%;
-  padding: 0.38rem;
-  cursor: pointer;
-  box-shadow: 0 0.125rem 0.15rem rgba(0, 0, 0, 0.9);
-} */
 .deploy {
   font-family: 'Roboto Mono';
   font-size: 1.4vw;
   background: rgb(37, 36, 36);
   color: #d8d8d8;
   border-radius: 5%;
-  padding: 0.5vw; /* Ajustamos el padding */
+  padding: 0.5vw; 
   cursor: pointer;
   box-shadow: 0 0.125vw 0.15vw rgba(0, 0, 0, 0.9);
 }
 
-
-/* .deploy:hover {
-  background: #d8d8d8; 
-  border: 0.2rem solid rgb(37, 36, 36);
-  color: rgb(37, 36, 36);
-} */
 .deploy:hover {
   background: #d8d8d8;
   border: 0.25vw solid rgb(37, 36, 36);
   color: rgb(37, 36, 36);
 }
 
-/* .reactIcon {
-  padding: 0.3rem;
-  height: 2.5rem;
-  width: 2.5rem;
-  background: rgb(37, 36, 36);
-  color: #d8d8d8;
-  border-radius: 5%;
-  padding: 0rem;
-  cursor: pointer;
-  box-shadow: 0 0.125rem 0.15rem rgba(0, 0, 0, 0.9);
-} */
 .reactIcon {
   padding: 0.3vw;
   height: 2.8vw;
@@ -265,28 +150,12 @@
   box-shadow: 0 0.125vw 0.15vw rgba(0, 0, 0, 0.9);
 }
 
-/* .reactIcon:hover {
-  background: #d8d8d8; 
-  border: 0.2rem solid rgb(37, 36, 36);
-  color: rgb(37, 36, 36);
-} */
 .reactIcon:hover {
   background: #d8d8d8;
   border: 0.25vw solid rgb(37, 36, 36);
   color: rgb(37, 36, 36);
 }
 
-/* .back button {
-  font-size: 0.98rem;
-  font-family: 'Roboto Mono';
-  background: #d8d8d8;
-  color: rgb(37, 36, 36);
-  border: 0.2rem solid rgb(37, 36, 36);
-  border-radius: 5%;
-  padding: 0.38rem;
-  cursor: pointer;
-  box-shadow: 0 0.125rem 0.15rem rgba(0, 0, 0, 0.9);
-} */
 .back button {
   font-size: 1.3vw;
   font-family: 'Roboto Mono';
@@ -305,113 +174,52 @@
 }
 
 @media (max-width: 768px) {
-  /* Estilos para las tarjetas en pantallas de celulares */
-  /* .projectCard {
-    width: 93%; 
-    margin: 0.2rem; 
-    padding: 0.2rem;
-  } */
   .projectCard {
     width: 98%;
     height: 65vw;
     margin: 0.6vw; 
     padding: 0.6vw; 
   }
-  /* .projectCard {
-    width: calc(33.3vw - 1.6vw);
-    height: 23.8vw;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-    position: relative;
-    perspective: 1000px;
-  } */
-
-  /* .projectCard > div {
-    width: 98%; 
-    height: 98%;
-  } */
   
-
-  /* .front {
-    margin: 0.2rem;
-    padding: 0.2rem;
-  } */
   .front {
     margin: 2vw;
     padding: 0.5vw;
   }
  
-  /* .front h2 {
-    font-family: 'Roboto Mono';
-    font-size: 1.25rem;
-    padding: 0.4rem;
-    color: white;
-    font-weight: normal;
-  } */
   .front h2 {
     font-family: 'Roboto Mono';
     font-weight: lighter;
-    font-size: 4.5vw; /* Ajustamos el tamaño */
-    padding: 0.5vw; /* Ajustamos el padding */
-    margin: 0.1vw; /* Ajustamos el margen */
+    font-size: 4.5vw; 
+    padding: 0.5vw; 
+    margin: 0.1vw; 
   }
 
-  /* .front img {
-    width: 98%; 
-    height: 98%;
-    border-radius: 5%;
-    padding: 0.05rem;
-  } */
   .front img {
     width: 98%;
     height: 67%;
-    padding: 1vw; /* Ajustamos el padding */
+    padding: 1vw; 
   }
 
-  /* .front button {
-    font-size: 1rem;
-    border-radius: 5%;
-    padding: 0.38rem;
-    margin: 0.3rem;
-    cursor: pointer;
-    font-weight: normal;
-    box-shadow: 0 0.125rem 0.15rem rgba(0, 0, 0, 0.9);
-  } */
   .front button {
-    font-size: 3.8vw; /* Ajustamos el tamaño */
+    font-size: 3.8vw; 
     border-radius: 5%;
-    padding: 1.3vw; /* Ajustamos el padding */
-    margin: 1vw; /* Ajustamos el margen */
+    padding: 1.3vw; 
+    margin: 1vw; 
   }
 
-  /* .back {
-    padding: 0rem;
-    margin:0.2rem -0.355rem 0.2rem -0.370rem;
-    font-size: 0.8rem;
-  } */
   .back {
     padding: 0.5vw;
     margin: 1.8vw;
   }
 
-  /* .back h3 {
-    font-size: 1rem;
-    padding: 0.2rem;
-  } */
   .back h3 {
     font-family: 'Roboto Mono';
     font-weight: lighter;
-    font-size: 4.5vw; /* Ajustamos el tamaño */
-    padding: 0.5vw; /* Ajustamos el padding */
-    margin: 0.1vw; /* Ajustamos el margen */
+    font-size: 4.5vw;
+    padding: 0.5vw; 
+    margin: 0.1vw;
   }
 
-  /* .back p {
-    padding: 0.2rem;
-    margin: 0.4rem 0.3rem 0.45rem 0.3rem;
-    font-size: 1rem;
-    text-align: justify;
-  } */
   .back p {
     padding: 0.5vw;
     margin: 1.5vw;
@@ -419,22 +227,11 @@
     text-align: justify;
   }
 
-  /* .back .linksContainer {
-    padding: 0.3rem;
-    margin: 0.2rem;
-  } */
   .back .linksContainer {
     padding: 1vw;
     margin: 1vw;
   }
   
-
-  /* .back a {
-    margin-bottom: 0.5rem;
-    font-size: 1.4rem;
-    padding: 0.2rem;
-    margin: 0.1rem
-  } */
   .back a {
     font-size: 3.8vw; 
     border-radius: 5%;
@@ -442,18 +239,6 @@
     margin: 1vw; 
   }
   
-
-  /* .reactIcon {
-    padding: 0.3rem;
-    height: 2.5rem;
-    width: 2.5rem;
-    background: rgb(37, 36, 36);
-    color: #d8d8d8;
-    border-radius: 5%;
-    padding: 0rem;
-    cursor: pointer;
-    box-shadow: 0 0.125rem 0.15rem rgba(0, 0, 0, 0.9);
-  } */
   .reactIcon {
     padding: 0.5vw;
     height: 7.5vw;

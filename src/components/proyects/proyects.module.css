@@ -1,45 +1,45 @@
-.proyectsContainer {
-    margin: 0.6rem;
+  .proyectsContainer {
     text-align: center;
+    margin: 0.4vw;
   }
 
   .proyectsContainer h1 {
-    font-size: 1.9rem; 
-    font-family: roboto mono;
+    font-size: 2.5vw;
+    font-family: 'Roboto Mono';
     font-weight: lighter;
     background-color: rgb(37, 36, 36);
     color: #ffffff;
-    padding: 0.4rem; 
-    border-radius: 0.625rem; 
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
+    padding: 1vw; 
+    border-radius: 1.25vw; 
+    box-shadow: 0 0.125vw 0.25vw rgba(0, 0, 0, 0.4); 
     display: inline-block;
   }
   
   .cardContainer {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-items: center;
+    margin: 0.1vw; 
   }
   
   @media (max-width: 768px) {
-    /* Estilos para la sección de proyectos en pantallas de celulares */
     .proyectsContainer {
-      margin: 0.1rem;
+      margin: 0.2vw; 
     }
   
     .proyectsContainer h1 {
-      font-size: 1.5rem;
-      padding: 0.4rem;
-      border-radius: 0.625rem;
-      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
+      font-size: 1.8vw; 
+      padding: 1vw; 
+      border-radius: 1.25vw; 
+      box-shadow: 0 0.125vw 0.25vw rgba(0, 0, 0, 0.4);
       display: inline-block;
-      margin: 0.3rem;
+      margin: 0.15vw; 
     }
   
     /* Estilos para los contenedores de tarjetas en pantallas de celulares */
     .cardContainer {
-      flex-direction: column; /* Cambia la dirección de los elementos a columna */
-      margin: 0.001rem;
-      padding: 0.001rem;
+      flex-direction: column;
+      margin: 0.001vw; /* 0.001rem a 0.001vw */
+      padding: 0.001vw; /* 0.001rem a 0.001vw */
     }
   }
+  
