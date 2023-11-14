@@ -6,7 +6,7 @@ const projects = [
   {
     name: "E-commerce 'Espacio Flipante'",
     description:
-    "Group work, a great collaborative working experience in creating a complete and complex application with its Admin Dashboard, filters, payment gateway, database, registration, and much more.",    
+    "Group work, an excellent collaborative experience in building a comprehensive and intricate application, including its Admin Dashboard, advanced filters, secure payment gateway, robust database, registration, and much more.",    
     deployLink: "https://espacio-flipante-pf.vercel.app",
     githubLink: "https://github.com/FernandoNasso?tab=repositories",
     image: require("../../assets/espacioFlipante.PNG"), 

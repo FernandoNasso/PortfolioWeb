@@ -1,21 +1,21 @@
-/* Estilos para el pie de página */
 .footer {
     font-family: 'Roboto Mono';
     font-weight: lighter;
     background-color: rgb(0, 0, 0);
     color: #d8d8d8;
     text-align: center;
-    padding: 0.8rem;
-    font-size: 0.8rem; /* Aumentamos el tamaño de fuente para una mejor legibilidad en dispositivos móviles */
-}
-
-/* Media Query para dispositivos móviles */
-@media (max-width: 768px) {
+    padding: 2vw; 
+    font-size: 1vw; 
+  }
+  
+  /* Media Query para dispositivos móviles */
+  @media (max-width: 768px) {
     .footer {
-        font-family: 'Roboto Mono';
-        font-weight: lighter;
-        color: #ffffff;
-        font-size: 0.5rem; /* Ajustamos el tamaño de fuente para dispositivos móviles */
-        padding: 0.4rem;
+      font-family: 'Roboto Mono';
+      font-weight: lighter;
+      color: #ffffff;
+      font-size: 1.2vw; 
+      padding: 1vw; 
     }
-}
+  }
+  
