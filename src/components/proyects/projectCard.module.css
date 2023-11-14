@@ -180,6 +180,7 @@
     margin: 1.1vw; 
     padding: 1vw; 
     position: relative;
+    transform-origin: center;
   }
   
   .front {
