@@ -175,10 +175,10 @@
 
 @media (max-width: 768px) {
   .projectCard {
-    width: 100%;
+    width: 95%;
     min-height: 65vw;
-    margin: 0.2vw; 
-    padding: 0.2vw; 
+    margin: 1.1vw; 
+    padding: 1vw; 
     position: relative;
   }
   
@@ -211,7 +211,7 @@
 
   .back {
     padding: 0.5vw;
-    margin: 1.8vw;
+    margin: 2vw;
   }
 
   .back h3 {
