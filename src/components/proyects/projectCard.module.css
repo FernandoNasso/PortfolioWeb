@@ -180,6 +180,7 @@
     margin: 0.2vw; 
     padding: 0.2vw; 
     position: relative;
+    transition-delay: 0.1s;
   }
   
   .front {
