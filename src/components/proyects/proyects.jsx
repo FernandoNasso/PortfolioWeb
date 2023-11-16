@@ -14,7 +14,7 @@ const projects = [
   {
     name: "App Food",
     description:
-    "Individual Project. It's a single-page application (SPA) with full CRUD functionality, allowing you to create, edit, delete, and get details of recipes, providing a comprehensive user experience.",
+    "Single Page Application (SPA) with full CRUD functionality, allowing you to create, edit, delete, and retrieve details of recipes. It utilizes the Spoonacular API, providing a comprehensive user experience.",
     githubLink: "https://github.com/FernandoNasso/PI-Food",
     image: require("../../assets/appFood.PNG"),
   },
