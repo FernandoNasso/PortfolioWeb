@@ -1,7 +1,7 @@
 .projectCard {
-  width: calc(33.33%); 
-  height: 23.8vw;
-  margin-right: 1.4vw; 
+  width: calc(32%); 
+  height: 22vw;
+  margin: 1vw 1.5vw 1vw auto; 
   transform-style: preserve-3d;
   transition: transform 0.5s;
   position: relative;
@@ -74,10 +74,9 @@
   background: #d8d8d8;
   width: 100%;
   height: 100%;
-  border-radius: 0.5vw;
+  border-radius: 5%;
   text-align: center;
   border: solid 0.5vw rgba(0, 0, 0, 0.8);
-  border-radius: 1.25vw;
 }
 
 .modalContent h3 {
@@ -176,11 +175,12 @@
 
 @media (max-width: 768px) {
   .projectCard {
-    width: 95%;
-    min-height: 65vw;
+    width: 91%; 
+    min-height: 60vw;
     margin: 1.1vw; 
     padding: 1vw; 
     position: relative;
+    border-radius: 3%;
   }
   
   .front {
@@ -210,24 +210,31 @@
     margin: 1vw; 
   }
 
-  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
   .modalContent {
-    background: #fff;
-    width: 80%; /* Modificado para que no ocupe todo el 100% */
-    padding: 20px;
-    border-radius: 8px;
+    background: #d8d8d8;
+    width: 100%;
+    border-radius: 2%;
+    margin: 2.1vw;
     text-align: center;
+    position: absolute;
+    border: solid 0.5vw rgba(0, 0, 0, 0.8);
+  }
+
+  .modalContent h3 {
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+    font-size: 4.4vw; 
+    padding: 1vw; 
+    margin: 2vw 2vw 0 2vw; 
+  }
+
+  .modalContent p{
+    font-family: 'Roboto Mono';
+    font-weight: lighter;
+    text-align: justify;
+    font-size: 3.8vw; 
+    margin: 1.2vw;
+    padding: 2vw;
   }
 
   /* Para cerrar el modal al hacer clic fuera de la ventana */
@@ -239,4 +246,33 @@
     height: 100%;
     cursor: pointer;
   }
+
+  .linksContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 4vw 2vw 4vw;
+  }
+
+  .reactIcon {
+    padding: 1vw;
+    height: 6vw;
+    width: 6vw;
+    background: rgb(37, 36, 36);
+    color: #d8d8d8;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+
+  .linksContainer button {
+    font-size: 3vw;
+    font-family: 'Roboto Mono';
+    background: #d8d8d8;
+    color: rgb(37, 36, 36);
+    border-radius: 5%;
+    padding: 0.38rem;
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.15rem rgba(0, 0, 0, 0.9);
+  }
 }
+
