@@ -22,7 +22,7 @@ const Contact = () => {
                 </a>
             </div>
             <div className={styles.cvDownload}>
-                <a href="https://drive.google.com/file/d/1P3NDKk3qBywbLlxxHLoWYlf58EuFtgWp/view?usp=drive_link" download="Fernando_Nasso_CV.pdf">
+                <a href="https://drive.google.com/file/d/1XPwG3FcUBYmqegZueDEaUfDu--oo2AyC/view?usp=sharing" download="Fernando_Nasso_CV.pdf">
                 <div className={styles.iconCV}>
                     <LuFileDown />
                 </div>
